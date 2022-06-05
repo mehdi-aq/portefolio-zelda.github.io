@@ -1,1 +1,106 @@
-Hello
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>The Lengend of Zelda - Breath of the wild</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<nav class="packed">
+				<ul>
+					<li><a href="">Trailler</a></li>
+					<li><a href="#acheter">Acheter</a></li>
+					<li><a href="#le-jeu">Le jeu</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="packed trailler">
+			<div class="video-surrounded">
+				<img class="angle angle-top-left" src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/angle-top-left.png" />
+				<img class="angle angle-top-right" src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/angle-top-right.png" />
+				<img class="angle angle-bottom-right" src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/angle-bottom-right.png" />
+				<video controls poster="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/title.png">
+					<source src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/video/trailler.mp4" type="video/mp4" />
+					<source src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/video/trailler.webm" type="video/webm" />
+					<source src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/video/trailler.ogv" type="video/ogg" />
+					Désolé, votre navigateur ne peut pas lire la vidéo.
+				</video>
+			</div>
+			<img id="hero" src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/hero.png" alt="link de dos sur un rocher" />
+		</section>
+		<section id="le-jeu" class="packed le-jeu">
+			<div>
+				<img class="in-slider" src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/ride.png" alt="" />
+				<p>Partez a l'aventure pour rassembler les fragments du passe !</p>
+			</div>
+			<div>
+				<img class="in-slider" src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/chasse.jpg" alt="" />
+				<p>Survivez au coeur de contrees sauvages !</p>
+			</div>
+			<div>
+				<img class="in-slider" src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/protector.png" alt="" />
+				<p>L'avenir d'hyrule est entre vos mains !</p>
+			</div>
+		</section>
+		<section id="acheter" class="packed acheter">
+			<img src="https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/game.png" />
+			<table>
+				<tr>
+					<td>Plate-forme</td>
+					<td>Wii U, Switch</td>
+				</tr>
+				<tr>
+					<td>Genre</td>
+					<td>Action / Aventure</td>
+				</tr>
+				<tr>
+					<td>Mode de jeu</td>
+					<td>Un joueur</td>
+				</tr>
+				<tr>
+					<td>PEGI</td>
+					<td>12</td>
+				</tr>
+				<tr>
+					<td>Langue</td>
+					<td>Multilangue</td>
+				</tr>
+				<tr>
+					<td>Editeur</td>
+					<td>Nintendo</td>
+				</tr>
+				<tr>
+					<td>Developpeur</td>
+					<td>Nintendo EPD</td>
+				</tr>
+				<tr>
+					<td>Distributeur</td>
+					<td>Nintendo</td>
+				</tr>
+				<tr>
+					<td>Concepteur</td>
+					<td>Hidemaro Fujibayashi et Eji Aonuma</td>
+				</tr>
+				<tr>
+					<td>Musique</td>
+					<td>Manaka Kataoka</td>
+				</tr>
+			</table>
+			<div>
+				<a href="https://www.nintendo.fr/Jeux/Nintendo-Switch/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html" target="_blank"><button>Acheter via nintendo shop</button></a>
+				<a href="https://www.ebay.fr/sch/i.html?_from=R40&_trksid=p2380057.m570.l1311&_nkw=zelda+breath+of+the+wild+switch&_sacat=0" target="_blank"><button>Ebay</button></a>
+			</div>
+		</section>
+		<div id="slider">
+			<button id="cross">&#10799;</button>
+			<div>
+				<button id="arrow-prev">&#10148;</button>
+				<button id="arrow-next">&#10148;</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+	</body>
+</html>

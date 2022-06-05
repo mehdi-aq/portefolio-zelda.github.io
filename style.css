@@ -1,0 +1,253 @@
+@font-face {
+	font-family: 'botw';
+	src:
+		url('font/botw.otf') format('otf'),
+		url('font/botw.eot') format('eot'),
+		url('font/botw.svg') format('svg'),
+		url('font/botw.ttf') format('ttf'),
+		url('font/botw.woff') format('woff');
+}
+
+:root {
+	--header-height: 6em;
+}
+
+.packed {
+	margin: 0 60px;
+}
+
+body {
+	margin: 0;
+	background-color: black;
+	font-family: 'botw';
+	color: white;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: unset;
+	transition: 0.5s;
+}
+
+a:visited, a:link {
+	color: white;
+}
+
+a:hover {
+	color: rgb(87, 205, 255);
+	text-decoration: underline;
+}
+
+header {
+	background-image: url('https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/texture.png');
+	background-size: 400px;
+	border-bottom: 3px solid white;
+	height: var(--header-height);
+
+	/* Pour résoudre le mystérieux BUG de background */
+	border-top: 1px solid rgba(0, 0, 0, 0);
+}
+
+header ul {
+	display: flex;
+	justify-content: space-between;
+
+
+	text-transform: uppercase;
+	font-family: 'botw';
+	color: white;
+	font-size: 2em;
+}
+
+.trailler {
+	overflow: hidden;
+	position: relative;
+	height: calc(100vh - var(--header-height));
+
+	border-width: 1px;
+  	border-style: solid;
+  	border-image:
+    	linear-gradient(
+      	to top,
+     	 white,
+     	 rgba(0, 0, 0, 0)
+    	) 1 1;
+}
+
+.trailler video {
+	width: 100%;
+}
+
+.video-surrounded {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 3em;
+	width: 50em;
+}
+
+.angle {
+	position: absolute;
+}
+
+.angle-top-left {
+	top: -30px;
+	left: -36px;
+}
+
+.angle-top-right {
+	top: -36px;
+	right: -30px;
+}
+
+.angle-bottom-right {
+	bottom: -30px;
+	right: -36px;
+}
+
+#hero {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.le-jeu {
+	background-image: url('https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/landscape.jpg');
+	background-attachment: fixed;
+	background-repeat: round;
+	background-size: auto 100%;
+}
+
+.le-jeu div {
+	display: flex;
+	justify-content: space-between;
+	font-size: 2em;
+	margin-top: 30px;
+	gap: 20px;
+	text-align: center;
+	box-shadow: 0px 14px 36px black;
+	background-color: #0000003b;
+	margin-right: 1em;
+}
+
+.le-jeu div p {
+	margin-right: 1em;
+}
+
+.le-jeu div img {
+	border: 3px solid white;
+	width: 20em;
+	transition: 0.5s;
+	margin-left: 2em;
+}
+
+.le-jeu div img:hover {
+	width: 23em;
+	transition: 0.5s;
+}
+
+.acheter {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: 50px;
+	text-transform: uppercase;
+	align-items: flex-end;
+	height: calc(100vh - 3em);
+	padding-bottom: 3em;
+}
+
+.acheter table {
+	font-size: 1.5em;
+	text-align: right;
+	color: #b79f67;
+}
+
+.acheter table td {
+	padding-left: 58px;
+}
+
+.acheter div {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+}
+
+.acheter div button {
+	cursor: pointer;
+	background: #e70010;
+	border: 0px;
+	padding: 16px 35px;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+	transition: 0.5s;
+}
+
+.acheter div button:hover {
+	background: #990000;
+	color: rgb(208, 208, 208);
+	transition: 0.5s;
+}
+
+.acheter div a:nth-child(2) button {
+	background: #3665f3 !important;
+}
+
+.acheter div a:nth-child(2) button:hover {
+	background: #2344a7 !important;
+}
+
+#slider {
+	display: none;
+	--width: 95%;
+	--height: 95%;
+	width: var(--width);
+	height: var(--height);
+	position: fixed;
+	left: calc(100vw / 2 - var(--width) / 2);
+	bottom: calc(100vh / 2 - var(--height) / 2);
+	background-image: url('https://gitlab.com/mehdi_aq/ocr_motiv/-/raw/master/img/ride.png');
+	background-size: 100% 100%;
+}
+
+#slider div {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	margin-bottom: 2em;
+	background: rgba(46, 42, 48, 0.383);
+}
+
+#slider button {
+	border: unset;
+	background: unset;
+	font-size: 3em;
+	transition: 0.2s;
+}
+
+#slider div button:first-child {
+	transform: scaleX(-1);
+}
+
+#slider button:hover {
+	color: rgb(164, 164, 164);
+	transition: 0.2s;
+}
+
+#slider img {
+	display: none;
+	width: 100%;
+	height: 100%;;
+}
