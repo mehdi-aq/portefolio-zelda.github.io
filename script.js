@@ -37,8 +37,8 @@ class Slider {
 		this.html.animate({
 			width: '95%',
 			height: '95%',
-			left: position.left,
-			top: position.top
+			left: finalPosition.left,
+			top: finalPosition.top
 		}, 300);
 	}
 
